@@ -1,0 +1,29 @@
+{
+  "name": "sol-parts/payum-contracts",
+  "type": "library",
+  "description": "Shared contracts between a Payum host application and sol-parts payment gateway packages",
+  "keywords": ["payum", "payment", "contracts", "gateway"],
+  "homepage": "https://sol.parts",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrii Didenko",
+      "email": "andrii@didenko.dev"
+    }
+  ],
+  "require": {
+    "php": ">=8.2",
+    "payum/core": "^1.7"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "SolParts\\PayumContracts\\": ""
+    },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  }
+}
